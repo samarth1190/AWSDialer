@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.user-card {
+  position: relative;
+  background-color: rgb(226, 230, 230);
+  box-shadow: 10px 10px 5px gray;
+  width: 1500px;
+}
+
+.user-card :hover {
+  cursor: pointer;
+}
+
+.user-card-container {
+  position: absolute;
+  top: 700px;
+  left: 180px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
