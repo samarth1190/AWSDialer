@@ -51,18 +51,38 @@ function DetailPage() {
       }}
     >
       <h3>
-        {firstName} {lastName}
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: "5px",
+            width: "250px",
+            height: "30px",
+            textAlign: "center",
+            top: "172px",
+            position: "absolute",
+            marginTop: "0px",
+            fontWeight: "bold",
+            fontSize: "20px",
+            marginLeft: "150px",
+            cursor: "pointer",
+          }}
+        >
+          {firstName} {lastName}
+        </div>
       </h3>
       <div
         onClick={clicktoDial}
         style={{
           backgroundColor: "white",
           borderRadius: "5px",
-          width: "100px",
+          width: "200px",
+          position: "absolute",
           height: "30px",
           textAlign: "center",
-          marginTop: "20px",
-          marginLeft: "600px",
+          marginTop: "200px",
+          fontWeight: "bold",
+          fontSize: "20px",
+          marginLeft: "380px",
           cursor: "pointer",
         }}
       >

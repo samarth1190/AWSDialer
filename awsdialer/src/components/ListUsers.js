@@ -33,11 +33,59 @@ function ListUsers() {
               );
             }}
           >
-            <h3>
-              First Name : {user.firstName}, Last Name : {user.lastName}
-            </h3>
-            <p>Phone Number : {user.customerPhoneNumber}</p>
-            <p>Status : {user.eventStatus}</p>
+            <div style={{ width: "100%" }}>
+              <div style={{ width: "50%" }}>
+                <table>
+                  <tr
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "25px",
+                      color: "blue",
+                    }}
+                  >
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                  </tr>
+                  <tr
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "20px",
+                      color: "black",
+                      margin: "2px",
+                      width: "1000px",
+                    }}
+                  >
+                    <td>
+                      <div
+                        style={{
+                          width: "100px",
+                        }}
+                      >
+                        {user.userId}
+                      </div>
+                    </td>
+                    <td>{user.firstName + " " + user.lastName}</td>
+                    <td>{user.customerPhoneNumber}</td>
+                  </tr>
+                </table>
+              </div>
+              <div
+                style={{
+                  alignContent: "right",
+                  verticalAlign: "top",
+                  fontSize: "25px",
+                  color: "green",
+                }}
+              >
+                <p>
+                  Status :{" "}
+                  <b>
+                    {user.eventStatus} since {user.lstMdfdDt}
+                  </b>
+                </p>
+              </div>
+            </div>
           </div>
         );
       })}
